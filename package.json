@@ -1,0 +1,33 @@
+{
+  "name": "smart_chains",
+  "version": "1.0.0",
+  "description": "medical insurance landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "cd frontend && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omogee/smartchains_medical_insurance.git"
+  },
+  "keywords": [
+    "medical",
+    "insurance",
+    "payment",
+    "gateway"
+  ],
+  "author": "Eze Ogbonnaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omogee/smartchains_medical_insurance/issues"
+  },
+  "homepage": "https://github.com/omogee/smartchains_medical_insurance#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20"
+  }
+}

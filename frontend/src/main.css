@@ -1,0 +1,163 @@
+.section_2div:hover{background-color: green;}
+.linker{cursor:pointer;}
+.linker:hover {color:orange}
+.branddiv{
+    width:20%;
+}
+.observeX{
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity:0;
+    transition-property: "opacity visibility transform";
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.observeY{
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity:0;
+    transition-property: "opacity visibility transform";
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.footersm{padding:50px 150px}
+.underdiv{display:none;}
+.hoveredlandingapp:hover .underdiv{display:block}
+.readmorebtn {display:none}
+.hoveredlandingapp:hover .readmorebtn{display:inline-block}
+.paystackbtn {
+    cursor: pointer;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    background-color: green;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    margin-top: 40px;
+  }
+.navlinks{width:35%;display: flex;}
+.searchinputdiv{width:10%}
+.navimage{display: none;}
+.lgnavimage{width:3%}
+.userimage{width:2%}
+.smsearchinput{display:none}
+.loginbtn{
+    width:100%;background-color:red;font-weight: bold;color:lightgrey;
+}
+.logindiv{
+    position:absolute;z-index:3;top:10%;padding:50px;background-color:black;width:30%;left:35%
+}
+.navdiv{justify-content:space-evenly;margin-bottom:10px}
+.shopcartdeldiv{width:30%;top:20%;left:35%;border-radius: 5px;}
+.detailcompdiv{padding:20px 50px}
+.lgpadding{padding:50px}
+.sect_onetext{width:50%}
+@media all and (max-width: 1200px){
+    .branddiv{
+        width:40%
+    }
+    .searchinputdiv{
+        width:50%
+    }
+    .lgnavimage{display:none}
+    .navimage{display: block;width:3%}
+    .navlinks{width:100%;background-color: orange;color:white;}
+    .userimage{width:3%}
+    .detailcompdiv{padding:20px 50px}
+    .logindiv{
+        position:absolute;z-index:3;top:5%;padding:50px;background-color:black;width:40%;left:30%
+    }
+
+}
+@media all and (max-width: 1150px){
+    .branddiv{
+        width:40%
+    }
+    .lgnavimage{display:none;}
+    .searchinputdiv{
+        width:50%
+    }
+    .userimage{width:3%}
+    .logindiv{
+        position:absolute;z-index:3;top:5%;padding:50px;background-color:black;width:40%;left:30%
+    }
+    .navlinks{width:100%;background-color: orange;color:white;}
+    .detailcompdiv{padding:20px 50px}
+}
+@media all and (max-width: 900px){
+    .branddiv{
+        width:40%
+    }
+    .searchinputdiv{
+        width:40%
+    }
+    .logindiv{
+        position:absolute;z-index:3;top:5%;padding:20px;background-color:black;width:60%;left:20%
+    }
+    .userimage{width:5%}
+ .navlinks{width:100%;background-color: orange;color:white;}
+ .navimage{width:5%}
+ .lgnavimage{display: none;}
+    .detailcompdiv{padding:10px 20px}
+    .shopcartdeldiv{width:40%;top:20%;left:30%}
+    .lgpadding{padding:30px}
+    .footersm{padding:10px 20px}
+    .sect_onetext{width:60%}
+}
+@media all and (max-width:600px){
+    .sect_onetext{width:80%}
+    .footersm{padding:10px 20px}
+    .navdiv{justify-content:space-between;margin-bottom:0px}
+    .lgpadding{padding:10px}
+    .shopcartdeldiv{width:70%;top:20%;left:15%}
+    .branddiv{width:80%}
+    .userimage{width:8%;padding:1px}
+    .searchinputdiv{display:none}
+    .smsearchinput{display:block}
+    .navlinks{display:none;}
+    .navlinks div{margin-top: 20px;}
+    .logindiv{
+        position:absolute;z-index:3;top:5%;left:0%;  padding:30px;background-color:black;width:100%
+    }
+    .navimage{width:8%;margin-right: 10px;}
+    .detailcompdiv{padding:5px}
+}
+.navlinks small{cursor:pointer}
+.navlinks small:hover{color:grey;border-radius: 25px; font-weight: bolder;cursor:pointer;border:1px solid lightgrey;padding:4px}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+.registerdiv{
+    position:absolute;z-index:3;top:10%;padding:20px;box-shadow:3px 2px 2px 3px lightgrey;background-color:white;width:30%;right:10%
+}
+ input:focus{
+    outline:none;
+    border:none;
+    border-bottom:1px solid red;
+    box-shadow:none;
+}
+.logindiv input:focus{
+    outline:none;
+    border:none;
+    border-bottom:1px solid red;
+    box-shadow:none;
+}
+.logindiv input{
+    outline:none;
+    border:none;
+    box-shadow:none;
+}
+
+.mainImg{height:170px;width:100%}
+
+.hoveredapp:hover .deletebtn{display:block}
+.linker{padding:0;margin:0}
+.linker:hover {color:orange;font-size: 13px;font-weight: bold;}
+
