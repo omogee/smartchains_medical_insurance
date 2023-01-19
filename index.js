@@ -64,6 +64,20 @@ app.get(`/payment_update`, (req, res)=>{
         }
     })
 })
+app.get(`/fetch_clients`, (req, res)=>{
+    conn.query(`select * from smartcc where smartccid =?`,[req.query.tkt], (err, client)=>{
+        if (err) throw err;
+        if(client && client.length > 0){
+            conn.query(`select * from smartcc`,(err, clients)=>{
+                if(err) throw err;
+                res.json({status:"success",clients:clients})
+            })
+        }else{
+            res.json({status:"failed",message:`client doesnt exist`})
+        }
+    })
+
+})
 const port = 5000 || process.env.Port
 app.listen(port,()=>{
  console.log("listening on port 5000")

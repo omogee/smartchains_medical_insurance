@@ -41,7 +41,7 @@ function Navbar() {
                   </p>
                   </div>
                 <div style={{padding:"0",margin:"0",cursor:"pointer"}} >
-                <p style={{padding:"0",color:"black"}}  className='mt-2'>Categories <small style={{fontSize:"8px",color:"grey"}}><span className={'fa fa-chevron-down'}></span></small></p>
+                <Link to={`/clients`} style={currentPage === "clients" ? {border:"2px solid orange",borderRadius:'25px',padding:"4px",textDecoration:"none"} : {color:"black",textDecoration:"none"}} className="linker"><p style={{padding:"0",color:"black"}}  className='mt-2'>Clients <small style={{fontSize:"8px",color:"grey"}}></small></p></Link>
                 </div>
                 <div>
                   <p className='mt-2'>

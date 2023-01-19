@@ -9,6 +9,7 @@ import "./main.css"
 import axios from 'axios';
 import Cookies from 'js-cookie';
 import Navbar from './navbar';
+import Clients from './clients';
 
 function App() {
   const [userdetails, setuserdetails] = useState({})
@@ -54,6 +55,7 @@ useEffect(()=>{
           <Route path='/' element={<Landing />} />
           <Route path='/login' element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/clients" element={<Clients />} />
         </Routes>
       </Router>
       </userContext.Provider>

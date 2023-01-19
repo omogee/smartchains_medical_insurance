@@ -15,6 +15,7 @@ function Register() {
   
     useEffect(()=>{
      setCurrentPage("register")
+     document.title = "smart chains | register"
     })
     const change=(e)=>{
         if(e.target.name === "email"){

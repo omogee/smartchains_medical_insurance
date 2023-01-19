@@ -61,6 +61,7 @@ function Landing() {
 
       useEffect(()=>{
         setCurrentPage("home")
+        document.title = "smart chains medical home page"
       })
 
  useEffect(()=>{

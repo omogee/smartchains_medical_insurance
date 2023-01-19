@@ -17,6 +17,7 @@ function Login() {
   
  useEffect(()=>{
   setCurrentPage("login")
+  document.title = "smart chains | login"
  })
 
     const changeType=()=>{
